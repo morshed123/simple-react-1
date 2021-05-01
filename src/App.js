@@ -9,7 +9,8 @@ function App() {
   const [playerCart, setPlayerCart] = useState([]);
 
   useEffect(() => {
-    const url ='https://6085d2e2d14a870017578555.mockapi.io/api/v1/players'
+    // const url ='https://6085d2e2d14a870017578555.mockapi.io/api/v1/players'
+    const url ='https://608d6ad5fe2e9c00171e1a73.mockapi.io/api/v1/players'
     fetch(url)
     .then((response) =>response.json())
     .then(data => setPlayers(data))
